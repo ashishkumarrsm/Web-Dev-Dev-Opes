@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  background: #0e0e0e;
+  color: white;
+ padding: 20px
+}
+#nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo {
+  font-size: 20px;
+  font-weight: 550;
+}
+ul{
+    display: flex;
+    
+}
+li{
+    padding: 0 12px 0 12px;
+    list-style: none;
+    
+}
+li:hover{
+    
+    color: rgb(202, 194, 194);
+    font-size: 18px;
+}
+a{
+    color: white;
+    
+}
+
+input{
+    padding: 12px;
+    border-radius: 12px;
+}
+button{
+    background-color: blue ;
+    color: white ;
+    padding: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 12px;
+}
+.main{
+    height: 100vh;
+}

@@ -4,13 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Visual Studio code - Code Editor</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
+  <!-- style tage using -->
+
+  <!-- <style>
+    body{
+        background-color: #e0e0e0;
+    }
+
+  </style> -->
+  <!-- let's remove the all inline css -->
+  <!-- style="background-color: #0e0e0e; color: white;" -->
   <body>
-    <header>
+    <header class="header">
+      <!-- style="display: flex;" -->
       <nav id="nav">
-        <div class="logo"><img src="" alt="" /> Visual Studio Code</div>
+        <div class="logo">
+          <img
+            src="https://code.visualstudio.com/assets/home/swimlane-chat-dark.webp"
+            alt=""
+            height="20px"
+          />
+          Visual Studio Code
+        </div>
         <div class="navigation">
-          <ul>
+          <!-- style="display: flex ;gap: 10px;" -->
+          <ul class="ul">
             <li>Docs</li>
             <li><a href="">Updates</a></li>
             <li><a href="">Blog</a></li>
@@ -22,10 +42,20 @@
           </ul>
         </div>
         <div class="serch">
-          <input type="text" placeholder="Search" />
+          <input type="text" placeholder="Search....." />
           <button>Downlode</button>
         </div>
       </nav>
+      <main class="main">
+        <div>
+          <span
+            ><a href="">1.6.6v</a> Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Eaque aspernatur accusamus quibusdam enim
+            reprehenderit veritatis odit iste nam, culpa consequuntur temporibus
+            ut provident.</span
+          >
+        </div>
+      </main>
     </header>
   </body>
 </html>
