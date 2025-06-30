@@ -59,6 +59,7 @@ let canVote = (user) => {
         console.log("You can't vote");
     }
 };
+##
 
 
 🎯 Key Learning Outcomes
