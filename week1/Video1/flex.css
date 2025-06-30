@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav{
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    padding: 20px 0px;  
+    background-color: #0e0e0e;
+    color: aliceblue;
+    
+}
+.logo{
+    width: 25px;
+}
+.ul{
+    padding: 12px;
+    
+    
+    
+}
+.heading{
+    font-size: 20px;
+    font-weight:600 ;
+}
+a{
+    text-decoration: none;
+  color: aliceblue;
+    
+}
+span:hover{
+    cursor: pointer;
+    color: rgb(125, 81, 81);
+    
+}
+input{
+    padding: 7px;
+    border-radius: 3px;
+    border: none;
+}
+button{
+    padding: 7px;
+    background: rgb(132, 132, 224);
+    color: aliceblue;
+    border-radius: 3px;
+    border: none;
+}
