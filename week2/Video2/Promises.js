@@ -57,21 +57,38 @@
 // }
 // setTimeoytPromisfied().then(main)
 
-function setTimeoutPromisified() {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve();
-    }, 1000);
-  });
-}
+// function setTimeoutPromisified() {
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       resolve();
+//     }, 1000);
+//   });
+// }
 
-function main(){
-  console.log("1 second has passed");
-  const sum=(a,b)=>{
-    console.log("a + b = ", a + b);
-  }
-  console.log(sum(2,3));
-  
-}
+// function main() {
+//   console.log("1 second has passed");
+//   const sum = (a, b) => {
+//     console.log("a + b = ", a + b);
+//   };
+//   console.log(sum(2, 3));
+// }
 
-setTimeoutPromisified().then(main);
+// setTimeoutPromisified().then(main);
+
+// class Rectangle {
+//   constructor(width,height){
+
+//   }
+//   area(){
+
+//   }
+// }
+
+
+
+
+
+// creating a promise
+
+
+
