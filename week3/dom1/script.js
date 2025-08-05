@@ -15,23 +15,58 @@ const { createElement } = require("react");
 // }
 
 // // setInterval(callback,1000)
-let ctr = 1;
-function addTodo() {
-  const todoEl = document.querySelector("input");
-  const curentValue = todoEl.value;
 
-  const newDev = document.createElement("div");
-  newDev.setAttribute("id", ctr);
-  ctr = ctr + 1;
-  newDev.innerHTML = `<div> ${curentValue} </div>
-   
-  <button onclick='deleteTodo()'>delet!!</button>`;
+// function addTask() {
+//   const taskInput = document.getElementById("taskInput");
+//   const taskText = taskInput.value.trim();
 
-  document.querySelector("body").appendChild(newDev);
-}
+//   if (taskText === "") {
+//     alert("Please enter a task.");
+//     return;
+//   }
 
-function deleteTodo() {
-  console.log("delete calll");
-//   const deleteEl = document.getElementById(this.ctr);
-//   console.log(deleteEl);
+//   const taskList = document.getElementById("taskList");
+
+//   // Create list item
+//   const li = document.createElement("li");
+//   li.textContent = taskText;
+
+//   // Create delete button
+//   const deleteBtn = document.createElement("button");
+//   deleteBtn.textContent = "Delete";
+//   deleteBtn.onclick = () => li.remove();
+
+//   li.appendChild(deleteBtn);
+//   taskList.appendChild(li);
+
+//   taskInput.value = "";
+// }
+
+function addTask() {
+  const input = document.querySelector("input");
+  const inputValue = input.value.trim();
+
+  // if thay add nothing
+
+  if (inputValue === "") {
+    alert("Plese enter thr task ");
+    return;
+  }
+  const taskList = document.getElementById("taskList");
+
+  // creating list item
+  const li = document.createElement("li");
+  li.textContent = inputValue;
+
+  // creating delete button
+  const deleteBtn = document.createElement("button");
+  deleteBtn.textContent = "Delete";
+
+  deleteBtn.onclick = () => {
+    li.remove();
+  };
+
+  li.appendChild(deleteBtn);
+  taskList.appendChild(li);
+  input.value = " ";
 }
